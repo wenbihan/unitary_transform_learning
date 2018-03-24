@@ -4,7 +4,7 @@ load('demo_data/Baby_sigma20.mat');
 % oracle      =   double(imread(demo_data/kodim08.png'));
 % noisy       =   oracle + randn(size(oracle)) * sig;
 
-%%%%%%%%%%%%%%%% strollr2D image denoising demo %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% UTL image denoising demo %%%%%%%%%%%%%%%%%%%%%
 param.sig       =   sig;                            % sigma
 param           =   getParam(param);     % parameters
 % run denoising

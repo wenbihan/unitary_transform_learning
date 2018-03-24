@@ -41,10 +41,12 @@ patches             =   module_im2patch(noisy, PatchSize);
 
 % Transform Learning
 [W, sparseCode, sparsityLevel]  =   module_TLapprox(patches, W, param);
+% patch quality score, inversely prop to sparsity level
 score                           =   1 ./ (sparsityLevel + 0.5);
 patchRecon                      =   W' * sparseCode;
-patchRecon(patchRecon>255) = 255;
-patchRecon(patchRecon<0) = 0;
+% [0 255] pixel value constraint
+patchRecon(patchRecon>255)      =   255;
+patchRecon(patchRecon<0)        =   0;
 % Denoised patch aggregation
 Xr                  =   module_aggreagtion(patchRecon, score, param);
 if nargin == 3
