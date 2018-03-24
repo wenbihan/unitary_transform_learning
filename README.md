@@ -3,14 +3,16 @@ Image Denoising Codes using Unitary Transform Learning, the Matlab implementatio
 
 This implementation is used in the following paper: 
 
-"When Sparsity Meets Low-Rankness: Transform Learning With Non-Local Low-Rank Constraint for Image Restoration", IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2017. [[ICASSP 2017](http://ieeexplore.ieee.org/abstract/document/7952566/)], [[PDF available](http://transformlearning.csl.illinois.edu/assets/Bihan/ConferencePapers/BihanICASSP2017strollr.pdf)], [[Code](https://github.com/wenbihan/unitary_transform_learning)], [[STROLLR] (https://github.com/wenbihan/strollr2d_icassp2017)].
+"When Sparsity Meets Low-Rankness: Transform Learning With Non-Local Low-Rank Constraint for Image Restoration", IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2017. [[ICASSP 2017](http://ieeexplore.ieee.org/abstract/document/7952566/)], [[PDF available](http://transformlearning.csl.illinois.edu/assets/Bihan/ConferencePapers/BihanICASSP2017strollr.pdf)], [[Code](https://github.com/wenbihan/unitary_transform_learning)], [[STROLLR](https://github.com/wenbihan/strollr2d_icassp2017)].
 
 
 Description:
 -----
 
 Learn unitary sparsifying transform directly from the noisy image, and use it for image denoising.
-The algorithm has exact solution for each step, which is very fast.
+
+This implementation provides the most basic and simple transform learning code for image denoising. The algorithm has exact solution for each step. The code is very fast, and can provide results with comparable PSNR to other popular methods.
+
 
 You can download our other software packages at: [My Homepage](http://web.engr.illinois.edu/~bwen3/) and [Transform Learning Site](http://transformlearning.csl.illinois.edu/).
 
